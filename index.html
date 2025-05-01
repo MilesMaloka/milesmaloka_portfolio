@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Miles Maloka</title>
+    <link rel="icon" href="./assets/gallery0.jpg" type="">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-50 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="#"><h1 class="text-3xl font-extrabold tracking-wide" style="font-family: Darker Grotesque, sans-serif;">Miles M. Maloka</h1></a>
+    
+      <div class="md:hidden">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav id="menu" class="hidden md:flex space-x-4">
+        
+            <!-- GitHub -->
+            <a href="https://github.com/MilesMaloka" target="_blank" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.774.42-1.305.763-1.605-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.624-5.478 5.92.43.37.815 1.1.815 2.22v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                
+            </a>
+    
+            <!-- linkedin -->
+            <a href="www.linkedin.com/in/miles-maloka-matsobane" target="_blank" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.062-1.867-3.062-1.867 0-2.154 1.459-2.154 2.967v5.699h-3v-10h2.881v1.367h.041c.401-.76 1.381-1.562 2.841-1.562 3.037 0 3.6 2.001 3.6 4.604v5.591z" />
+                </svg>
+                
+            </a>
+            <!-- Email -->
+            <a href="mailto:milesmmaloka@gmail.com" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12.713l-11.99-7.713h23.98l-11.99 7.713zm11.99-9.713h-23.98c-1.105 0-2.01.896-2.01 2v12c0 1.104.905 2 2.01 2h23.98c1.105 0 2.01-.896 2.01-2v-12c0-1.104-.905-2-2.01-2zm-11.99 10.287l-11.99-7.713v10.426l11.99-2.713 11.99 2.713v-10.426l-11.99 7.713z" />
+                </svg>
+            </a>
+
+            <a href="#about" class="hover:underline hover:decoration-stone-400">About</a>
+            <a href="#projects" class="hover:underline hover:decoration-stone-400">Projects</a>
+            <a href="#contact" class="hover:underline hover:decoration-stone-400">Contact</a>
+            <a href="#gallery" class="hover:underline hover:decoration-stone-400">Gallery</a>
+
+        
+
+      </nav>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#about" class="block py-2 hover:underline">About</a>
+      <a href="#projects" class="block py-2 hover:underline">Projects</a>
+      <a href="#contact" class="block py-2 hover:underline">Contact</a>
+      <!-- GitHub -->
+      <a href="https://github.com/MilesMaloka" target="_blank" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.774.42-1.305.763-1.605-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.624-5.478 5.92.43.37.815 1.1.815 2.22v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+      </a></svg>
+
+       <!-- linkedin -->
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.062-1.867-3.062-1.867 0-2.154 1.459-2.154 2.967v5.699h-3v-10h2.881v1.367h.041c.401-.76 1.381-1.562 2.841-1.562 3.037 0 3.6 2.001 3.6 4.604v5.591z" />
+        </svg>
+        
+      </a>
+      <!-- Email -->
+      <a href="mailto:yourname@example.com" class="hover:underline hover:decoration-stone-400 flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 12.713l-11.99-7.713h23.98l-11.99 7.713zm11.99-9.713h-23.98c-1.105 0-2.01.896-2.01 2v12c0 1.104.905 2 2.01 2h23.98c1.105 0 2.01-.896 2.01-2v-12c0-1.104-.905-2-2.01-2zm-11.99 10.287l-11.99-7.713v10.426l11.99-2.713 11.99 2.713v-10.426l-11.99 7.713z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+    <section class="relative h-[400px] w-full overflow-hidden">
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Hero background"
+            class="absolute w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white">
+        <div class="p-10 rounded-lg">
+            <h2 class="text-5xl font-bold mb-4" style="font-family: Darker Grotesque, sans-serif;">Miles Matsobane Maloka</h2>
+            <p class="text-xl">Computer Science Graduate  &#8226  IT  &#8226  Software Development</p>
+            
+        </div>
+        </div>
+    </section>
+
+  <!-- About Section -->
+    <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6 border-b-4 border-stone-500 inline-block">About Me</h2>
+        <p class="text-lg leading-relaxed mt-4">I am a passionate and motivated Computer Science and Statistics graduate with a strong interest in software development and creative problem-solving. I completed an internship, where I gained hands-on experience in IT support, troubleshooting, and maintaining computer systems. This experience strengthened my technical foundation and deepened my interest in how technology can be used to improve everyday operations.</p>
+        <p class="text-lg leading-relaxed mt-4">I have a particular love for software development and enjoy building functional, user-friendly applications. I thrive in environments that allow me to be both analytical and creative, and I’m always eager to learn new tools and technologies. Whether it's writing clean code, designing web interfaces, or solving technical challenges, I bring enthusiasm, adaptability, and a strong work ethic to every task.</p>
+    </section>
+
+  <!-- Slideshow Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+        
+        <div class="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
+            <img id="slideshow-image" src="https://source.unsplash.com/800x400/?nature,1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000">
+        </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16 px-4 mx-auto"> 
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold mb-10 border-b-4 border-stone-500 inline-block">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1547842462-b552abdeb38a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Kendrick Lamar Fan Site</h3>
+            <p class="text-sm text-gray-700">Created this fan site because I wanted to improve my frontend skills. I used HTML,CSS, JS and Tailwind CSS</p>
+            <br>
+            <a href="https://kdotmatsobane.netlify.app" target="_blank"><button class="font-bold hover:underline hover:decoration-stone-400" >View Project</button></a>
+            
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">TJField - Startup</h3>
+            <p class="text-sm text-gray-700">I was given the chance to create the first website for the startup company called TJField. 
+                To create a responsive and useful online presence that complemented the company's vision, the project required the use 
+                of HTML, CSS, JavaScript, Bootstrap, and PHP.</p>
+                <br>
+            <a href="https://tjfieldconsultingandprojects.netlify.app/" target="_blank"><button class="font-bold hover:underline hover:decoration-stone-400">View Project</button></a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1660176982561-0d9e8705877d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Final Year Computer Science Project</h3>
+            <p class="text-sm text-gray-700">I took part in a group project in computer science with ten University of Limpopo students.
+                 By utilizing technology-driven solutions, the project sought to lower crime 
+                and prevent suicide among the university community and the surrounding Mankweng area.</p>
+                <br>
+                <button class="font-bold hover:underline hover:decoration-stone-400 text-gray-600">Disabled Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 border-b-4 border-stone-500 inline-block">Contact Me</h2>
+      <form class="mt-8 space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-stone-500">
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-stone-500">
+        <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-stone-500"></textarea>
+        <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition">Send Message</button>
+      </form>
+    </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-600">
+    <p style="font-family: Darker Grotesque, sans-serif;">&copy; 2025 Miles Matsobane Maloka.</p>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Slideshow functionality
+    const slideshowImage = document.getElementById('slideshow-image');
+    const imageUrls = [
+      './assets/gallery0.jpg',
+      './assets/gallery1.jpg',
+
+      './assets/gallery3.jpg',
+      
+    ];
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % imageUrls.length;
+      slideshowImage.style.opacity = 0;
+      setTimeout(() => {
+        slideshowImage.src = imageUrls[currentIndex];
+        slideshowImage.style.opacity = 1;
+      }, 500);
+    }, 4000);
+  </script>
+</body>
+
+</html>
