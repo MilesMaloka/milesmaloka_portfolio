@@ -1,6 +1,9 @@
-# My Magazine-Style Portfolio
+# My Portfolio Website
 
 Welcome to my creative portfolio! This project is designed as a sleek, magazine-inspired website to showcase my design and development work in a bold, stylish format.
+## About Me
+
+Simply Click to preview: https://milesmaloka.netlify.app/ 
 
 ## About Me
 
